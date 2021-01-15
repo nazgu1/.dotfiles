@@ -1,0 +1,49 @@
+## macOS Junk
+._*
+.AppleDouble
+.LSOverride
+Icon
+.DS_Store
+*./.DS_Store
+*/*/.DS_Store
+.Spotlight-V100
+.Trashes
+.localized
+
+## Windows junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Linux junk
+*~
+
+## Dev junk
+build/*
+pkg/*
+.svn
+*~
+log/*
+tmp/**/*
+vendor/bundle
+node_modules
+*.pyc
+
+# SASS Ignores
+*.sass-cache
+
+# Ignore tags created by etags and ctags
+TAGS
+!TAGS/
+tags
+!tags/
+
+#dotfiles ignores
+.zsh/aliases.private
+.ssh/config.private
+.ssh/id_*
+.ssh/known_hosts
+.ssh/authorized_keys*
+.gitconfig.private*
+Brewfile.lock.json

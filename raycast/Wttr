@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title Wttr
+# @raycast.mode fullOutput
+
+# Optional parameters:
+# @raycast.icon ☂️
+# @raycast.packageName Utilities
+# @raycast.author Dawid Dziurdzia
+# @raycast.authorURL https://dziurdzia.pl
+# @raycast.description Get weather
+# @raycast.argument1 { "type": "text", "placeholder": "location", "optional": true }
+
+curl -qs "https://wttr.in/$1?Fqn&lang=pl"

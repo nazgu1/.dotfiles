@@ -1,0 +1,22 @@
+# case insensitive path-completion
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+
+# partial completion suggestions
+zstyle ':completion:*' list-suffixes
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' file-list all
+
+zstyle ':completion:*' menu select
+zstyle ':completion:*' group-name ''
+
+zstyle ':completion:::::' completer _expand _extensions _complete _ignored _approximate 
+
+zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
+zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
+zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
+
+zstyle ':completion:*' squeeze-slashes true
+
+autoload -U compinit && compinit
+compdef g=git
+compdef _screen screen

@@ -1,0 +1,8 @@
+#dotfiles ignores
+.zsh/aliases.private
+.ssh/config.private
+.ssh/id_*
+.ssh/known_hosts
+.ssh/authorized_keys*
+.gitconfig.private*
+Brewfile.lock.json

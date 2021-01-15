@@ -1,0 +1,18 @@
+Host *
+  IgnoreUnknown UseKeychain,AddKeysToAgent,PermitLocalCommand
+  PermitLocalCommand yes
+  IdentitiesOnly yes
+  ForwardAgent no
+  PasswordAuthentication yes
+  ForwardX11 no
+  ForwardX11Trusted no
+  HashKnownHosts no
+  ChallengeResponseAuthentication no
+  Protocol 2
+  AddKeysToAgent yes
+  TCPKeepAlive yes
+  UseKeychain yes
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/keys/%r@%h
+
+Include config.private
