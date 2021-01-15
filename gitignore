@@ -47,4 +47,11 @@ TAGS
 tags
 !tags/
 
-
+#dotfiles ignores
+.zsh/aliases.private
+.zsh/secrets
+.ssh/config.private
+.ssh/id_*
+.ssh/known_hosts
+.ssh/authorized_keys*
+.gitconfig.private*
