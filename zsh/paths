@@ -1,0 +1,2 @@
+# PATHS
+export PATH="~/.bin:/opt/homebrew/bin:/opt/homebrew/opt:$PATH"

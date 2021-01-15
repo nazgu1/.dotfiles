@@ -1,0 +1,50 @@
+## macOS Junk
+._*
+.AppleDouble
+.LSOverride
+Icon
+.DS_Store
+*./.DS_Store
+*/*/.DS_Store
+.Spotlight-V100
+.Trashes
+.localized
+
+## Windows junk
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+# Folder config file
+Desktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+## Linux junk
+!.gitignore
+!.swiftlint.yml
+*~
+
+## Dev junk
+build/*
+pkg/*
+.svn
+*~
+log/*
+tmp/**/*
+vendor/bundle
+node_modules
+*.pyc
+
+# SASS Ignores - "Sassy CSS" http://sass-lang.com/
+*.sass-cache
+
+# SublimeText project files
+*.sublime-workspace
+
+# Ignore tags created by etags and ctags
+TAGS
+!TAGS/
+tags
+!tags/
+
+

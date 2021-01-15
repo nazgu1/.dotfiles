@@ -1,0 +1,40 @@
+# ALIASES
+
+alias ibrew="arch -x86_64 /usr/local/bin/brew"
+alias brew="/opt/homebrew/bin/brew"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias server='python3 -m http.server'
+ytmp3() {
+  youtube-dl -x --audio-format mp3 --no-playlist --audio-quality 3 $1
+}
+
+alias s='sudo '
+alias sudo='sudo '
+
+alias bru="brew update && brew upgrade && brew cleanup"
+alias aptu="apt update && apt upgrade"
+
+g() {
+  if [[ $# > 0 ]]; then
+    git $@
+  else
+    git status
+  fi
+}
+
+# SHORTCUTS
+alias d="cd ~"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Downloads"
+alias n="$VISUAL"
+alias path='echo $PATH | tr -s ":" "\n"'
+
+
+
+

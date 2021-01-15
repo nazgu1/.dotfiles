@@ -1,0 +1,26 @@
+#options
+setopt AUTO_CD
+setopt NO_CASE_GLOB
+setopt CORRECT
+setopt CORRECT_ALL
+CORRECT_IGNORE_FILE='.*'
+setopt auto_list # automatically list choices on ambiguous completion
+setopt auto_menu # automatically use menu completion
+setopt always_to_end # move cursor to end if word had one match
+
+#history
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+SAVEHIST=8000
+HISTSIZE=4000
+setopt SHARE_HISTORY
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_VERIFY
+
+setopt HIST_EXPIRE_DUPS_FIRST 
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+
+bindkey "^[[A" up-line-or-search
+bindkey "^[[B" down-line-or-search
