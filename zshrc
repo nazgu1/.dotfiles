@@ -1,4 +1,4 @@
-export DOTFILES_PATH="~/.dotfiles"
+export DOTFILES_PATH="$HOME/.dotfiles"
 
 source $DOTFILES_PATH/zsh/paths
 source $DOTFILES_PATH/zsh/env

@@ -1,9 +1,17 @@
-#!/usr/bin/env sh
+#!/usr/bin/env zsh
 
-CONFIGS_PATH="~/.dotfiles"
-DEPLOY_PATH="~/"
+CONFIGS_PATH="$HOME/.dotfiles/"
+DEPLOY_PATH="$HOME/"
 
-FILES=(editorconfig zshrc npmrc nanorc hushlogin gitignore gitconfig ssh/config)
+FILES=('editorconfig' 'zshrc' 'npmrc' 'nanorc' 'hushlogin' 'gitignore' 'gitconfig' 'ssh/config')
 
+for F in $FILES; do
+  FROM="$CONFIGS_PATH$F"
+  TO="$DEPLOY_PATH.$F"
+  echo "Deploying $FROM 👉 $TO"
+  rm $TO
+  ln -s $FROM $TO
+done
 
-
+PRIVATE_FILES=('ssh/config.private' 'gitconfig.private')
+# TODO: make private templates if not exists

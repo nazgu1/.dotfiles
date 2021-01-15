@@ -24,3 +24,6 @@ setopt HIST_REDUCE_BLANKS
 
 bindkey "^[[A" up-line-or-search
 bindkey "^[[B" down-line-or-search
+
+# Enable Ctrl-x-e to edit command line
+autoload -U edit-command-line
