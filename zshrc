@@ -13,4 +13,4 @@ source $DOTFILES_PATH/zsh/prompt
 source $DOTFILES_PATH/zsh/secrets
 
 #includes
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix zsh-syntax-highlighting)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
