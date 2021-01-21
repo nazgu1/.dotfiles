@@ -1,7 +1,7 @@
 # ALIASES
 
-alias ibrew="arch -x86_64 /usr/local/bin/brew"
-alias brew="/opt/homebrew/bin/brew"
+alias ibrew="arch -x86_64 $IBREW_BIN"
+alias brew="$BREW_BIN"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 

@@ -1,2 +1,12 @@
 # PATHS
-export PATH="~/.bin:/opt/homebrew/bin:/opt/homebrew/opt:$PATH"
+
+if [[ "${arch}" == "arm64" ]]
+then
+  export BREW_BIN="/opt/homebrew/bin/brew"
+  export IBREW_BIN="/usr/local/bin/brew"
+else
+  export BREW_BIN="/usr/local/bin/brew"
+  export IBREW_BIN="/usr/local/bin/brew"
+fi
+
+export PATH="~/.bin:/opt/homebrew/bin:/opt/homebrew/opt:/usr/local/bin/:/usr/local/opt/:$PATH"
