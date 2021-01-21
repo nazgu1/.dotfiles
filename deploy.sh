@@ -10,7 +10,7 @@ for F in $FILES; do
   TO="$DEPLOY_PATH.$F"
   echo "Deploying $FROM 👉 $TO"
   rm $TO
-  ln -s $FROM $TO
+  cp $FROM $TO
 done
 
 PRIVATE_FILES=('ssh/config.private' 'gitconfig.private')
