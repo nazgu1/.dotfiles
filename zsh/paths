@@ -1,6 +1,6 @@
 # PATHS
 
-if [[ "${arch}" == "arm64" ]]
+if [[ "$(arch)" == "arm64" ]]
 then
   export BREW_BIN="/opt/homebrew/bin/brew"
   export IBREW_BIN="/usr/local/bin/brew"
