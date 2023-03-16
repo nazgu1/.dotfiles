@@ -337,7 +337,11 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>26832831-9C70-4112-AD7C-4526F52821EA</string>
+	<key>DrawOutlineAroundCursor</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
+	<false/>
+	<key>HdrCursor</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
@@ -686,6 +690,8 @@
 			<string>Default</string>
 			<key>Disable Window Resizing</key>
 			<true/>
+			<key>Draw Powerline Glyphs</key>
+			<false/>
 			<key>Flashing Bell</key>
 			<false/>
 			<key>Foreground Color</key>
@@ -1159,6 +1165,8 @@
 	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
+	<key>ShowMetalFPSmeter</key>
+	<false/>
 	<key>Snippets</key>
 	<array/>
 	<key>SoundForEsc</key>
@@ -1174,6 +1182,8 @@
 	</dict>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>disableMetalWhenUnplugged</key>
+	<true/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
