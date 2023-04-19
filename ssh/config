@@ -13,6 +13,5 @@ Host *
   TCPKeepAlive yes
   UseKeychain yes
   AddKeysToAgent yes
-  IdentityFile ~/.ssh/keys/%r@%h
 
 Include config.private
