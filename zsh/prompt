@@ -3,15 +3,15 @@ zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '%F{green}●%f'
 zstyle ':vcs_info:*' unstagedstr '%F{yellow}●%f'
-zstyle ':vcs_info:*' formats '%c%u %F{blue}%b'
+zstyle ':vcs_info:*' formats '%c%u %F{blue}%0.14b '
 zstyle ':vcs_info:*' actionformats '%c%u%F{blue}%b %F{gray}%a'
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b|%F{yellow}%r%f'
 zstyle ':vcs_info:git*+set-message:*' hooks git-status
 
 if [[ -v SSH_CLIENT ]]; then
-  PROMPT='%f %F{226}%n%F{220}%B@%F{214}%m %B%F{33}%1~%f%b %(#.%F{196}〉.%F{39}〉)%F{15}'
+  PROMPT='%f %F{226}%n%F{220}%B@%F{214}%m %B%F{33}%1~%f%b %(#.%F{196}〉.%F{39}〉)%F{0}'
 else
-  PROMPT='%f %B%F{33}%1~%f%b %(#.%F{196}〉.%F{39}〉)%F{15}'
+  PROMPT='%f %B%F{33}%1~%f%b %(#.%F{196}〉.%F{39}〉)%F{0}'
 fi
 
 function set_window_title() {
@@ -29,4 +29,4 @@ precmd_vcs_info() {
 precmd_functions+=(precmd_vcs_info set_window_title)
 setopt prompt_subst
 setopt PROMPT_BANG
-RPROMPT='%(?..❕️) ${vcs_info_msg_0_} %F{240}#! [%*]'
+RPROMPT='%(?..❗️ )${vcs_info_msg_0_}%F{240}#! [%*]'
