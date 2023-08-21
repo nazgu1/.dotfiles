@@ -1,5 +1,4 @@
 # PATHS
-
 LOCAL_BIN_PATH="$HOME/.dotfiles/bin/$(uname)-$(uname -m)"
 export PATH="$LOCAL_BIN_PATH:/usr/local/bin:/usr/local/opt:$PATH"
 
@@ -19,7 +18,14 @@ export MANPAGER='less -X'
 export LESSHISTFILE=- #disable generating .lesshst files
 
 # XDG
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$HOME/Library/Caches/"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_STATE_HOME="$HOME/.local/state"
+if [[ $(uname) == Darwin ]]; then # if mac
+  export XDG_CONFIG_HOME="$HOME/.config"
+  export XDG_CACHE_HOME="$HOME/Library/Caches/"
+  export XDG_DATA_HOME="$HOME/.local/share"
+  export XDG_STATE_HOME="$HOME/.local/state"
+else
+  export XDG_CONFIG_HOME="$HOME/.config"
+  export XDG_CACHE_HOME="$HOME/.cache"
+  export XDG_DATA_HOME="$HOME/.local/share"
+  export XDG_STATE_HOME="$HOME/.local/state"
+fi
