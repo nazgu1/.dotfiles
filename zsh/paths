@@ -1,16 +1,7 @@
 # PATHS
 
-if [[ "$(uname -m)" == "arm64" ]]; then
-  export BREW_BIN="/opt/homebrew/bin/brew"
-  export IBREW_BIN="/usr/local/bin/brew"
-else
-  export BREW_BIN="/usr/local/bin/brew"
-  export IBREW_BIN="/usr/local/bin/brew"
-fi
-
 LOCAL_BIN_PATH="$HOME/.dotfiles/bin/$(uname)-$(uname -m)"
-
-export PATH="$LOCAL_BIN_PATH:/opt/homebrew/sbin:/opt/homebrew/bin:/opt/homebrew/opt:/usr/local/bin:/usr/local/opt:$PATH"
+export PATH="$LOCAL_BIN_PATH:/usr/local/bin:/usr/local/opt:$PATH"
 
 # ENV
 export EDITOR='nano'
@@ -24,6 +15,11 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export CLICOLOR=true
 autoload -U colors && colors
 
-export HOMEBREW_NO_ANALYTICS=1
 export MANPAGER='less -X'
 export LESSHISTFILE=- #disable generating .lesshst files
+
+# XDG
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/Library/Caches/"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
