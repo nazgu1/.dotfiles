@@ -1,5 +1,7 @@
 export DOTFILES_PATH="$HOME/.dotfiles"
 
+eval "$(devbox global shellenv)"
+
 source $DOTFILES_PATH/zsh/paths
 source $DOTFILES_PATH/zsh/aliases
 source $DOTFILES_PATH/zsh/aliases.private
