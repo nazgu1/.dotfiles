@@ -26,3 +26,4 @@ autoload -U colors && colors
 
 export HOMEBREW_NO_ANALYTICS=1
 export MANPAGER='less -X'
+export LESSHISTFILE=- #disable generating .lesshst files
