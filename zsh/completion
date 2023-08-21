@@ -19,4 +19,3 @@ zstyle ':completion:*' squeeze-slashes true
 
 autoload -U compinit && compinit
 compdef g=git
-compdef _screen screen
