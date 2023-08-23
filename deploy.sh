@@ -5,7 +5,7 @@ git submodule update --init --recursive
 CONFIGS_PATH="$HOME/.dotfiles/"
 DEPLOY_PATH="$HOME/"
 
-FILES=('curlrc' 'screenrc' 'nanorc' 'tmux.conf' 'zshrc' 'nanorc' 'hushlogin' 'gitignore' 'gitconfig' 'ssh/config')
+FILES=('curlrc' 'nanorc' 'tmux.conf' 'zshrc' 'nanorc' 'hushlogin' 'gitignore' 'gitconfig' 'ssh/config')
 
 for F in $FILES; do
   FROM="$CONFIGS_PATH$F"

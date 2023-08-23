@@ -22,12 +22,13 @@
     "pandoc@latest",
     "step-cli@latest",
     "inetutils@latest",
-    "gnupg@latest",
     "sqlite@latest",
     "gramps@latest",
     "neovim@latest",
     "hugo",
-    "direnv@latest"
+    "direnv@latest",
+    "micro@latest",
+    "nixfmt@latest"
   ],
   "shell": {
     "init_hook": [
