@@ -29,4 +29,4 @@ precmd_vcs_info() {
 precmd_functions+=(precmd_vcs_info set_window_title)
 setopt prompt_subst
 setopt PROMPT_BANG
-RPROMPT='%(?..❗️ )${vcs_info_msg_0_}%F{240}#! [%*]'
+RPROMPT='%F{244}%(?..❗️ )${vcs_info_msg_0_}#! %*'
