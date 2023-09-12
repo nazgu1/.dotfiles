@@ -1,7 +1,5 @@
 # ALIASES
-alias arch="uname -m"
 alias i="arch -x86_64"
-alias brew="$BREW_BIN"
 alias myip="dig +short txt ch whoami.cloudflare @1.0.0.1 | tr -d '\"'"
 alias ..="cd .."
 alias server='python3 -m http.server'
@@ -20,10 +18,16 @@ lscolors() {
 
 alias s='sudo '
 alias sudo='sudo '
+alias d='docker'
+alias dc='docker compose '
+alias dcl='docker compose logs '
+alias dcp='docker compose ps'
+alias dcpl='docker compose pull'
+alias dcu='docker compose up -d'
+alias dcub='docker compose up -d --build'
 
 alias bru="brew update && brew upgrade && brew cleanup"
 alias aptu="apt update && apt upgrade"
-alias dc="docker compose"
 
 g() {
   if [[ $# > 0 ]]; then
