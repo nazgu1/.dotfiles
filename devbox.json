@@ -26,10 +26,11 @@
     "sqlite@latest",
     "gramps@latest",
     "neovim@latest",
-    "hugo",
     "direnv@latest",
     "bitwarden-cli@latest",
-    "micro@latest"
+    "nixfmt@latest",
+    "parallel@latest",
+    "hugo"
   ],
   "shell": {
     "init_hook": [
