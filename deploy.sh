@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-git submodule update --init --recursive
-
 CONFIGS_PATH="$HOME/.dotfiles/"
 DEPLOY_PATH="$HOME/"
 

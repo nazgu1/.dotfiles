@@ -1,6 +1,5 @@
 # PATHS
-LOCAL_BIN_PATH="$HOME/.dotfiles/bin/$(uname)-$(uname -m)"
-export PATH="$LOCAL_BIN_PATH:/usr/local/bin:/usr/local/opt:$PATH"
+export PATH="/usr/local/bin:/usr/local/opt:$PATH"
 
 # ENV
 export EDITOR='nano'
